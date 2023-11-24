@@ -69,9 +69,7 @@
 
 <img
     class="lazyloaded {{ class }} {% if crop %}lazyload-crop-{{ crop }}{% endif %}"
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-class="LazyLoad"
-    data-src="{{ responsive-image | img_url: '1000x1000' }}"
-    data-mob-src="{{ responsive-image | img_url: '600x600' }}"
+    src="{{ responsive-image | img_url: '200X200' }}"
     data-sizes="auto"
      loading="lazy"
     data-aspectratio="1.5"

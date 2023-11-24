@@ -6,7 +6,7 @@ Do not modify or remove this snippet, this snippet can be overwritten when the a
 {% comment %}
 Add css to the head
 {% endcomment %}
-{{ 'limoniapps-discountninja.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" data-href="{{ 'limoniapps-discountninja.css' | asset_url }}">
 
 {% comment %}
 Save token for later use and register event listener

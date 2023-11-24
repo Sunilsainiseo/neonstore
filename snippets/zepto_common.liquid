@@ -3,11 +3,11 @@
           pointer-events: none;
         }
 </style>
-<script>
+<script type="lazyload_int">
 var pplr_cart = {{ cart | json }};
 var pplr_shop_currency = {{ shop.currency | json }};
 var pplr_enabled_currencies_size = {{ shop.enabled_currencies | size }};
 var pplr_money_formate = {{ shop.money_format | json }};
 var pplr_manual_theme_selector={{ shop.metafields.pplr['manual_theme_selector'] | json }};
 </script>
-<script defer="defer" src="//cdn-zeptoapps.com/product-personalizer/pplr_common.js?v={{ "now" | date: "%d" }}" ></script>
+<script type="lazyload_int" data-src="//cdn-zeptoapps.com/product-personalizer/pplr_common.js?v={{ "now" | date: "%d" }}" ></script>

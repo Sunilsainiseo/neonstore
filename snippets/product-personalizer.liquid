@@ -1,6 +1,7 @@
 {% if pplr != 'item-image' %}{% if template != 'cart' %}{% if product.metafields.customify['cstmfy_ref'] %}<script type='text/javascript'>window.location = "{{ product.metafields.customify['cstmfy_ref'] }}";</script>{% endif %}{% if product-personalizer == null %}{% if product.metafields.customify['cstmfy_req'] == '1' %}{% if pplr_load_once != true %}
 {% assign pplr_load_once = true %}<style>.pplr_add_to_cart{display:none !important;}</style><div id="pplr-{{ product.id }}" data-id="{{ product.id }}" class="product-personalizer" data-handle="{{product.handle}}"></div>
-<script type='text/javascript'>
+
+  <script type='lazyload_int'>
   if (typeof product_personalizer == 'undefined') {
   var product_personalizer = {{product.metafields.customify | json}};
   }

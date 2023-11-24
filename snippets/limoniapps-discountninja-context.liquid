@@ -3,7 +3,7 @@ This liquid snippet is used by Discount Ninja
 Do not modify or remove this snippet, this snippet can be overwritten when the app is upgraded
 {% endcomment %}
 
-<script>
+<script type="lazyload_int">
   {%- comment -%}Initialize object{%- endcomment -%}
   window.discountNinjaContext = { Shop: "{{shop.permanent_domain}}", ApiVersion: "5", ShopCurrency: "{{shop.currency}}", PresentmentCurrency: "{{cart.currency.iso_code}}", EnabledCurrencies: [], MoneyFormat: "{{shop.money_format | replace: '"', "'"}}", MoneyWithCurrencyFormat: "{{shop.money_with_currency_format | replace: '"', "'"}}", Customer: null, Cart: {{ cart | json }}, Product: null, CollectionProducts: [], ProductVariants: null, Labels: { From: "{{ 'discount_ninja.from' | t }}", Here: "{{ 'discount_ninja.here' | t }}", Free: "{{ 'discount_ninja.free' | t }}", SoldOut: "{{ 'discount_ninja.sold_out' | t }}" }, Settings: {% include 'limoniapps-discountninja-context-settings' %}, Flags: {% include 'limoniapps-discountninja-context-flags' %}, Status: {% include 'limoniapps-discountninja-context-status' %}, Signature: {% include 'limoniapps-discountninja-context-signature' %} };
 

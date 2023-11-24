@@ -63,7 +63,7 @@
 
 
 
-<script>
+<script type="lazyload_int">
   
   
 function openCity(evt, cityName) {
@@ -82,8 +82,8 @@ function openCity(evt, cityName) {
   
 </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
+<script type="lazyload_int" data-src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="lazyload_int">
   $(document).ready(function(){
     $('.tab-content-dg .tab button:first-child').addClass('active');
   });
@@ -110,11 +110,6 @@ function openCity(evt, cityName) {
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
 
 
 

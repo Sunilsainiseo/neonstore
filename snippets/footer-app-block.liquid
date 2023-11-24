@@ -1,0 +1,83 @@
+{% if canonical_url contains '/products/custom-design' %}
+    <div id="shopify-block-10004392781266402770" class="shopify-block shopify-app-block">
+        <!-- BEGIN app snippet: neon-customiser-modules -->
+        <script>
+            var link = document.createElement('link');
+            link.rel = 'modulepreload';
+            link.href = "https://cdn.shopify.com/extensions/68b887ef-dea6-4c09-9322-70c47265fe0f/neon-sign-customiser-83/assets/neon-sign-customiser-d7937d10.js";
+            link.as = 'script';
+            document.head.appendChild(link);
+        </script>
+        <script src="https://cdn.shopify.com/extensions/68b887ef-dea6-4c09-9322-70c47265fe0f/neon-sign-customiser-83/assets/neon-sign-customiser-d7937d10.js" type="module"></script>
+        <!-- END app snippet -->
+        <!-- BEGIN app snippet: neon-customiser-vars -->
+        <script src="https://cdn.shopify.com/extensions/68b887ef-dea6-4c09-9322-70c47265fe0f/neon-sign-customiser-83/assets/custom-neon-integration.js" type="text/javascript" defer="defer"></script>
+        <script>
+            window.neonCustomiser = window.neonCustomiser || {};
+            window.neonCustomiser.moneyFormat = "{% raw %}${{amount}}{% endraw %}";                
+            window.neonCustomiser.rtl = false;
+            window.neonCustomiser.scrollOrder = false;          
+        </script>
+        <style>
+            @media screen and (max-width: 1024px) {
+                #neon-customiser-app .frame-preview:not(.review-frame):not(.npc-frame-preview--stacked),
+                #neon-customiser-app .customiser-loading {
+                    min-height: calc((100vh - 0px) * 0.6);
+                }
+                #neon-customiser-app > div {
+                    min-height: calc(100vh - 0px);
+                }
+                #neon-customiser-app .sidebar-loading {
+                    height: calc((100vh - 0px) * 0.4);
+                }
+            }
+            @media screen and (min-width: 1025px) {
+                #neon-customiser-app > div {
+                    height: calc(100vh - 0px);
+                }
+            }
+        </style>
+        <!-- END app snippet -->
+    </div>
+{% else %}
+    <div id="shopify-block-10004392781266402770" class="shopify-block shopify-app-block">
+        <!-- BEGIN app snippet: neon-customiser-modules -->
+        <script type="lazyload_int">
+            var link = document.createElement('link');
+            link.rel = 'modulepreload';
+            link.href = "https://cdn.shopify.com/extensions/68b887ef-dea6-4c09-9322-70c47265fe0f/neon-sign-customiser-83/assets/neon-sign-customiser-d7937d10.js";
+            link.as = 'script';
+            document.head.appendChild(link);
+        </script>
+        <script type="lazyload_int" data-src="https://cdn.shopify.com/extensions/68b887ef-dea6-4c09-9322-70c47265fe0f/neon-sign-customiser-83/assets/neon-sign-customiser-d7937d10.js" data-w3-type="module"></script>
+        <!-- END app snippet -->
+        <!-- BEGIN app snippet: neon-customiser-vars -->
+        <script type="lazyload_int"data-src="https://cdn.shopify.com/extensions/68b887ef-dea6-4c09-9322-70c47265fe0f/neon-sign-customiser-83/assets/custom-neon-integration.js"></script>
+        <script type="lazyload_int">
+            window.neonCustomiser = window.neonCustomiser || {};
+            window.neonCustomiser.moneyFormat = "{% raw %}${{amount}}{% endraw %}";                
+            window.neonCustomiser.rtl = false;
+            window.neonCustomiser.scrollOrder = false;          
+        </script>
+        <style>
+            @media screen and (max-width: 1024px) {
+                #neon-customiser-app .frame-preview:not(.review-frame):not(.npc-frame-preview--stacked),
+                #neon-customiser-app .customiser-loading {
+                    min-height: calc((100vh - 0px) * 0.6);
+                }
+                #neon-customiser-app > div {
+                    min-height: calc(100vh - 0px);
+                }
+                #neon-customiser-app .sidebar-loading {
+                    height: calc((100vh - 0px) * 0.4);
+                }
+            }
+            @media screen and (min-width: 1025px) {
+                #neon-customiser-app > div {
+                    height: calc(100vh - 0px);
+                }
+            }
+        </style>
+        <!-- END app snippet -->
+    </div>
+{% endif %}
