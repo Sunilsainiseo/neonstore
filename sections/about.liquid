@@ -1,0 +1,76 @@
+
+
+<!--           <div style="margin:0 auto;" class="pxFormGenerator" id="qdoajj6ie0qQs6_dcmtN2A"></div>		 -->
+
+
+  <section class="about-block neon-about-last-sec">
+    <h3 class="text-center about-block-title">{{section.settings.about-title}}</h3>
+    <div class="about-all-rows row">
+      {% for block in section.blocks %} 
+
+        <div class="col-md-4">
+          <div class="ab-item">
+          <h5 class="text-center">{{block.settings.heading}}</h5>
+          <p class="text-center">{{block.settings.subheading}}</p>
+          </div>
+        </div>
+     
+      {% endfor %}
+
+    </div>
+  </section>
+</article>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "About Section",
+    "settings": [
+     
+{
+        "id": "about-title",
+        "type": "text",
+        "label": "About Title"
+      }
+
+
+],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        {
+          "id": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "id": "subheading",
+          "type": "text",
+          "label": "Sub Heading"
+        }
+      ]
+    }
+],
+
+
+
+"presets": [
+{
+"name": "About Section",
+"category": "Custom"
+}
+]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

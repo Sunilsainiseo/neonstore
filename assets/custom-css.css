@@ -1,0 +1,49 @@
+.form_custom {
+    width: 50%;
+    max-width: 100%;
+    margin: 0px 54%;
+}
+.fill-form-btn-custom a{
+  background:#3A2D7D;
+}
+@media(max-width:1024px){
+  .form_custom{
+    margin:0;
+      width: 100%;
+  }
+  #custom-new-product .custom-accordings-s
+  {
+    width:100%!important;
+  } 
+}
+
+#custom-new-product .custom-accordings-s{
+  display:block!important;
+  width:calc(100% - 520px);
+}
+
+.after_pay_li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: fit-content;
+}
+
+.afterpay_logo{
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.shopify-policy__container{
+  max-width:100%!important;
+}
+
+.npc-sign-raceway-double-line.npc-sign-line:before , .npc-sign-raceway-double-line.npc-sign-line:after {
+    display: none;
+}
+
+#neon-customiser-app .npc-note-container{
+  font-size:12px;
+}

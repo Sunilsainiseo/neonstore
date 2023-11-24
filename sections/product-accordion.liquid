@@ -1,0 +1,119 @@
+<div class="custom-accordings-s">
+  <ul class="accordion-list">
+    <li>
+      <h3>Font and Size Guide <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"></path></svg> </h3>
+      <div class="answer">
+      {% assign page_content = section.settings.page_handle_font %}  
+	        	{{ pages[page_content].content }}
+          
+      </div>
+    </li>
+    <li>
+      <h3>Description <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"></path></svg></h3>
+      <div class="answer">
+         {{product.description}}
+      </div>
+    </li>
+    <li>
+      <h3>Shipping <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"></path></svg></h3>  
+      <div class="answer">
+        {% assign page_content = section.settings.page_shipping %}  
+	        	{{ pages[page_content].content }}
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+{% comment %}
+
+<button class="accordion"> Font and Size Guide</button>
+<div class="panel">
+  {% assign page_content = section.settings.page_handle_font %}  
+	        	{{ pages[page_content].content }}
+</div>
+
+<button class="accordion"> Description</button>
+<div class="panel">
+  {{product.description}}
+  
+</div>
+
+<button class="accordion">Shipping</button>
+<div class="panel">
+  {% assign page_content = section.settings.page_shipping %}  
+	        	{{ pages[page_content].content }}
+  
+</div>
+{% endcomment %}
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+{% schema %}
+  {
+    "name": "Product Accordion",
+    "settings": [
+ {
+            "type": "page",
+            "id": "page_handle_font",
+            "label": "Select a page"
+          },
+{
+            "type": "page",
+            "id": "page_shipping",
+            "label": "Select a page"
+          },
+		  {
+            "type": "text",
+            "id": "page_title",
+            "label": "Page title"
+          }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

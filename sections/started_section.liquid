@@ -1,0 +1,147 @@
+  <div class="neio-ins-fow3">
+
+    <h3>{{section.settings.sec_title}}</h3>
+          
+    <p>{{section.settings.sub_title}}</p>
+
+      <div class="neion-txt-blck-s">
+        <div class="container">
+      	<div class="about-all-rows row">
+          {% for block in section.blocks %}
+
+           <div class="col-md-6">
+            <div class="ab-item">
+             <h5 class="text-center">{{block.settings.title}}</h5>
+              <p class="text-center">{{block.settings.Subtitle}}</p>
+             </div>
+            </div>
+                  
+          {% endfor %}
+          
+<!--       <div class="col-md-6">
+        <div class="ab-item">
+        <h5 class="text-center">A unique design no one else has</h5>
+        <p class="text-center">Tired of that friend who always seems to beat you to it? We were too, which is why we
+want you to put them in their place once and for all with a custom light they’ll never have
+seen before</p>
+      </div>
+        </div>
+      <div class="col-md-6">
+        <div class="ab-item">
+        <h5 class="text-center">Bright ideas become bright neons</h5>
+        <p class="text-center">The brightest of bright ideas deserve to be captured for the rest of the world to see,
+which is where we come in. By taking care of the boring stuff we help your creativity be
+seen in style for miles around.
+</p>
+      </div>
+        </div>
+      <div class="col-md-6">
+        <div class="ab-item">
+        <h5 class="text-center">See your idea up in lights</h5>
+        <p class="text-center">You’ve dreamed of seeing your name up in lights, so why not let your idea steal the
+show and come to life? It’s the perfect way to create a unique piece of art that will have
+all eyes on you.</p>
+      </div>
+      </div> -->
+      </div>
+      </div>
+      </div>
+      
+     </div>
+
+
+<!--   <div class="neio-ins-fow3">
+        <h3>Let’s get you started!</h3>
+        <p>Upload your image with a couple of quick clicks and we’ll take it from there. Easy!</p>   
+    
+      <div class="neion-txt-blck-s">
+        <div class="container">
+      	<div class="about-all-rows row">
+      <div class="col-md-6">
+        <div class="ab-item">
+        <h5 class="text-center">Custom neon lights for you</h5>
+        <p class="text-center">You want the finer things in life, and that means breaking the cycle of following the
+crowd. They find some good stuff, sure; but they never find great stuff. We know you
+can create something truly great when you put your mind to it!</p>
+      </div>
+      </div>
+      <div class="col-md-6">
+        <div class="ab-item">
+        <h5 class="text-center">A unique design no one else has</h5>
+        <p class="text-center">Tired of that friend who always seems to beat you to it? We were too, which is why we
+want you to put them in their place once and for all with a custom light they’ll never have
+seen before</p>
+      </div>
+        </div>
+      <div class="col-md-6">
+        <div class="ab-item">
+        <h5 class="text-center">Bright ideas become bright neons</h5>
+        <p class="text-center">The brightest of bright ideas deserve to be captured for the rest of the world to see,
+which is where we come in. By taking care of the boring stuff we help your creativity be
+seen in style for miles around.
+</p>
+      </div>
+        </div>
+      <div class="col-md-6">
+        <div class="ab-item">
+        <h5 class="text-center">See your idea up in lights</h5>
+        <p class="text-center">You’ve dreamed of seeing your name up in lights, so why not let your idea steal the
+show and come to life? It’s the perfect way to create a unique piece of art that will have
+all eyes on you.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+     </div> -->
+
+{% schema %}
+  {
+    "name": "Started Section",
+    "settings": [
+{
+      "type": "text",
+      "id": "sec_title",
+      "label": "Section Title"
+    },
+{
+      "type": "html",
+      "id": "sub_title",
+      "label": "Section Subtitle"
+    }
+],
+"blocks": [
+			{
+				"type": "text",
+				"name": "Product",
+				"settings": [
+					{
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                      },
+                  {
+                        "type": "html",
+                        "id": "Subtitle",
+                        "label": "Subtitle"
+                      }
+										
+				]
+			}
+		],
+
+ "presets": [
+    {
+    "name": "Started Section",
+    "category": "Custom"
+    }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

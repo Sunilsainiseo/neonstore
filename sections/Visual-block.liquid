@@ -1,0 +1,70 @@
+
+
+<div class="container">
+
+<div class="product-icons row">
+    
+    {% for block in section.blocks %}
+       <div class="col-md-3">
+         <div class="p-ixon-div-ins">
+        <img class="iconeimg" src="{{ block.settings.icon_imagess | img_url:'master' }}">
+
+         <h5>{{block.settings.icon_title}}</h5>
+         <p>{{block.settings.icon_subtitle}}</p>
+       </div>
+         </div>
+    
+    {% endfor %}
+
+    </div>
+
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "Visual Block Section name",
+    "settings": [],
+"blocks":[
+{
+"type" : "Image",
+"name" : "Image",
+"settings" : [
+
+        {
+        "id": "icon_imagess",
+        "type": "image_picker",
+        "label": "Product Image"
+        },
+{
+  "id" : "icon_title",
+  "type" : "text",
+  "label" : "Icon Title" 
+},
+{
+  "id" : "icon_subtitle",
+  "type" : "text",
+  "label" : "Icon Subtitle" 
+}
+
+] } ],
+
+
+"presets": [
+{
+"name": "Visual Block Section name",
+"category": "Visual Block Section name"
+}
+]
+
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

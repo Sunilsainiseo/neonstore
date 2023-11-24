@@ -1,0 +1,27 @@
+<img src="{{section.settings.image |img_url:'master'}}">
+
+{% schema %}
+  {
+    "name": "After Image",
+    "settings": [
+{
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+],
+"presets": [
+     {
+       "name": "After Image",
+          "category": "Slideshow"
+     }
+   ]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

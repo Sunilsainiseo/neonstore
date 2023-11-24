@@ -1,0 +1,20 @@
+<div id="neon-customiser-app" data-customiserid="1108"></div><br>
+
+<p class="notice_text" style="display:none;">Digital mockup only. Colour may appear differently in real life.</p>
+
+{% if product.tags contains 'custom' %}              
+{%section 'product-accordion'%}
+{%else%}
+{%section 'product-description'%}
+{%endif%}
+
+{% comment %}
+    <div class="form_custom">
+      <div class="text-para"><strong>NEED TO TALK WITH OUR DESIGNERS?</strong></div>
+      <div class="fill-form-btn fill-form-btn-custom"><a href="https://theneonstore.com.au/pages/upload-your-image" >Fill a form </a></div>
+    </div>
+{% endcomment %}
+
+    {%section 'product-icon-tab'%}
+
+    {% section 'template--product--recommendations' %}

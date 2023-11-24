@@ -1,0 +1,103 @@
+<div class="new-faq-sec image-custom-faqs">
+    <div class="container">
+    <div class="title-bar custom-font">
+      <h2 class="main-heading" style="font-weight: normal; font-size: 34px !important; margin-bottom: 10px;">{{section.settings.sec_title}}</h2>
+    </div>
+
+    <div class="accordion_row-main">
+      <div class="accordion_col-6-main">
+        <div class="accordion_container">
+        <div class="accordion_head">{{section.settings.qus_title1}}<span class="plusminus"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 20 20"><path fill="#444" d="M17.409 8.929h-6.695V2.258c0-.566-.506-1.029-1.071-1.029s-1.071.463-1.071 1.029v6.671H1.967C1.401 8.929.938 9.435.938 10s.463 1.071 1.029 1.071h6.605V17.7c0 .566.506 1.029 1.071 1.029s1.071-.463 1.071-1.029v-6.629h6.695c.566 0 1.029-.506 1.029-1.071s-.463-1.071-1.029-1.071z"></path></svg></span></div>
+          <div class="accordion_body" style="display: none;">
+            <p>{{section.settings.ans_title1}}</p>
+          </div>
+
+          <div class="accordion_head">{{section.settings.qus_title2}} <span class="plusminus"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 20 20"><path fill="#444" d="M17.409 8.929h-6.695V2.258c0-.566-.506-1.029-1.071-1.029s-1.071.463-1.071 1.029v6.671H1.967C1.401 8.929.938 9.435.938 10s.463 1.071 1.029 1.071h6.605V17.7c0 .566.506 1.029 1.071 1.029s1.071-.463 1.071-1.029v-6.629h6.695c.566 0 1.029-.506 1.029-1.071s-.463-1.071-1.029-1.071z"></path></svg></span></div>
+          <div class="accordion_body" style="display: none;">
+            <p>{{section.settings.ans_title2}}</p>
+          </div>
+ 
+        </div>    
+      </div>
+      
+      <div class="accordion_col-6-main">
+              <div class="accordion_container">
+          <div class="accordion_head">{{section.settings.qus_title3}} <span class="plusminus"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 20 20"><path fill="#444" d="M17.409 8.929h-6.695V2.258c0-.566-.506-1.029-1.071-1.029s-1.071.463-1.071 1.029v6.671H1.967C1.401 8.929.938 9.435.938 10s.463 1.071 1.029 1.071h6.605V17.7c0 .566.506 1.029 1.071 1.029s1.071-.463 1.071-1.029v-6.629h6.695c.566 0 1.029-.506 1.029-1.071s-.463-1.071-1.029-1.071z"></path></svg></span></div>
+          <div class="accordion_body" style="display: none;">
+            <p>{{section.settings.ans_title3}}</p>
+          </div> 
+
+          <div class="accordion_head">{{section.settings.qus_title4}} <span class="plusminus"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 20 20"><path fill="#444" d="M17.409 8.929h-6.695V2.258c0-.566-.506-1.029-1.071-1.029s-1.071.463-1.071 1.029v6.671H1.967C1.401 8.929.938 9.435.938 10s.463 1.071 1.029 1.071h6.605V17.7c0 .566.506 1.029 1.071 1.029s1.071-.463 1.071-1.029v-6.629h6.695c.566 0 1.029-.506 1.029-1.071s-.463-1.071-1.029-1.071z"></path></svg></span></div>
+          <div class="accordion_body" style="display: none;">
+            <p>{{section.settings.ans_title4}}</p>
+          </div> 
+
+        </div>    
+      </div>
+    </div>  
+</div>  
+</div>      
+
+
+{% schema %}
+  {
+    "name": "FAQ Section",
+    "settings": [
+{
+      "type": "text",
+      "id": "sec_title",
+      "label": "Section Title"
+    },
+{
+      "type": "text",
+      "id": "qus_title1",
+      "label": "Question Title"
+    },
+{
+      "type": "text",
+      "id": "ans_title1",
+      "label": "Answer Title"
+    },
+{
+      "type": "text",
+      "id": "qus_title2",
+      "label": "Question Title"
+    },
+{
+      "type": "text",
+      "id": "ans_title2",
+      "label": "Answer Title"
+    },
+{
+      "type": "text",
+      "id": "qus_title3",
+      "label": "Question Title"
+    },
+{
+      "type": "text",
+      "id": "ans_title3",
+      "label": "Answer Title"
+    },
+{
+      "type": "text",
+      "id": "qus_title4",
+      "label": "Question Title"
+    },
+{
+      "type": "text",
+      "id": "ans_title4",
+      "label": "Answer Title"
+    }
+
+
+],
+
+ "presets": [
+    {
+    "name": "FAQ Section",
+    "category": "Custom"
+    }
+    ]
+  }
+{% endschema %}
+

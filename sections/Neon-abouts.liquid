@@ -1,0 +1,47 @@
+	<section class="entry-content Neon-abouts">
+       <h3 class="text-center">{{section.settings.title}}</h3>
+       <p class="text-center page-about-content">
+         {{section.settings.subtitle1}}
+         </p>
+      <p class="color-hver-ch">
+        
+        {{section.settings.subtitle2}}
+       </p>
+	</section>
+
+{% schema %}
+  {
+    "name": "Neon-abouts",
+    "settings": [
+{
+        "id": "title",
+        "type": "text",
+        "label": "Title"
+      },
+  {
+        "id": "subtitle1",
+        "type": "text",
+        "label": "Subtitle"
+      },
+ {
+        "id": "subtitle2",
+        "type": "text",
+        "label": "Subtitle"
+      }
+
+],
+
+"presets": [
+{
+"name": "Neon-abouts",
+"category": "Custom"
+}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,54 @@
+  <div class="contact-info-text-btms">
+    <div class="contact-info-text flex-container row">
+      <div class="col-md-6">
+        <h4>{{section.settings.title1}}</h4>
+        <p>{{section.settings.description1}}</p>
+      </div>
+      <div class="col-md-6">
+        <h4>{{section.settings.title2}}</h4>
+        <p>{{section.settings.description2}}</p>
+      </div>
+    </div>
+  </div>
+
+
+{% schema %}
+  {
+    "name": "Contact Info",
+    "settings": [
+{
+      "type": "text",
+      "id": "title1",
+      "label": "Title"
+    },
+{
+      "type": "text",
+      "id": "description1",
+      "label": "Description"
+    },
+{
+      "type": "text",
+      "id": "title2",
+      "label": "Title"
+    },
+{
+      "type": "text",
+      "id": "description2",
+      "label": "Description"
+    }
+],
+"presets": [
+{
+"name": "contact-info",
+"category": "Contact Info"
+}
+]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

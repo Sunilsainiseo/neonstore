@@ -1,0 +1,28 @@
+<!-- /templates/product.liquid -->
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/template--product.liquid
+{% endcomment %}
+
+{% section 'template--product' %}
+
+{% if product.tags contains 'custom' %}              
+
+{%section 'product-accordion'%}
+{%else%}
+
+{%section 'product-description'%}
+{%endif%}
+
+{%section 'product-icon-tab'%}
+
+{% section 'template--product--recommendations' %}
+
+{%comment%}
+{%section 'image--gallery'%}
+
+{%section 'after-payimage-sec'%}
+{%endcomment%}
+
+
+{%section 'newsletter--newsletter'%}
+

@@ -1,0 +1,120 @@
+
+<style>
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    transition: 0.3s;
+    font-size: 18px;
+    margin: 0 15px 5px 0;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Change background color of buttons on hover */
+
+
+/* Create an active/current tablink class */
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding-top: 20px;
+  text-align: left;
+}
+.tab .tablinks{
+  position: relative;
+}
+.tab .tablinks:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid transparent;
+}
+.tablinks.active:after{
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+.tab-content-dg p {
+    font-size: 18px;
+}
+</style>
+
+
+
+<!--  -->
+
+
+<!--  -->
+
+
+
+
+<script>
+  
+  
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.tab-content-dg .tab button:first-child').addClass('active');
+  });
+</script>
+   
+
+<!--  description  -->
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+ {
+            "type": "page",
+            "id": "page_handle",
+            "label": "Select a page"
+          },
+		  {
+            "type": "text",
+            "id": "page_title",
+            "label": "Page title"
+          }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+
+
